@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sharlet Prime – Privacy Policy</title>
+  <style>
+    :root{
+      --bg:#0f1115; --card:#141821; --text:#e8edf2; --muted:#b6c0cc; --accent:#46b3ff; --border:#232a36;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:880px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:linear-gradient(180deg,var(--bg) 75%,transparent);padding:18px 0 6px;z-index:10}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px}
+    h1{font-size:28px;margin:0 0 6px}
+    .sub{color:var(--muted);font-size:14px;margin-bottom:18px}
+    h2{font-size:20px;margin:28px 0 10px}
+    h3{font-size:16px;margin:18px 0 8px}
+    ul{padding-left:18px;margin:8px 0}
+    li{margin:6px 0}
+    .toc{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0;padding:0}
+    .toc a{display:inline-block;background:#0e121a;border:1px solid var(--border);padding:8px 10px;border-radius:10px;font-size:14px}
+    code, .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:90%}
+    .perm{display:inline-flex;gap:8px;flex-wrap:wrap}
+    .note{color:var(--muted);font-size:14px}
+    .badge{display:inline-block;font-size:12px;padding:2px 8px;border:1px solid var(--border);border-radius:999px;background:#0d1219;color:var(--muted)}
+    .section{margin-top:14px}
+    footer{margin:28px 0;color:var(--muted);font-size:14px}
+    hr{border:0;border-top:1px solid var(--border);margin:22px 0}
+    @media (prefers-color-scheme: light){
+      :root{--bg:#f6f8fb;--card:#ffffff;--text:#111827;--muted:#5b6472;--accent:#0b75ff;--border:#e5e7eb}
+      header{background:linear-gradient(180deg,#f6f8fb 75%,transparent)}
+      .toc a{background:#fff}
+    }
+    @media print{
+      header{position:static;background:none}
+      .card{box-shadow:none}
+      .toc a{border:0;background:none;padding:0}
+      a[href^="http"]::after{content:" (" attr(href) ")";font-size:12px;color:#666}
+      body{background:#fff;color:#000}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="card">
+        <h1>Sharlet Prime – Privacy Policy</h1>
+        <div class="sub">Last Updated: <span id="last-updated" class="mono">—</span></div>
+        <nav aria-label="Table of contents">
+          <div class="toc">
+            <a href="#info">1. Information We Collect</a>
+            <a href="#use">2. How We Use Your Data</a>
+            <a href="#security">3. Data Storage & Security</a>
+            <a href="#sharing">4. Data Sharing</a>
+            <a href="#permissions">5. Permissions We Use</a>
+            <a href="#rights">6. Your Rights</a>
+            <a href="#children">7. Children’s Privacy</a>
+            <a href="#changes">8. Changes to This Policy</a>
+            <a href="#contact">9. Contact Us</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="card" id="content">
+      <section id="intro" class="section">
+        <p><strong>Sharlet Prime</strong> ("the App", "we", "our") provides food ordering, restaurant browsing, and customer interaction services. This policy explains how your data is collected, used, and protected when using the app.</p>
+      </section>
+
+      <section id="info" class="section">
+        <h2>1. Information We Collect</h2>
+        <p>We collect the following categories of information to provide app features:</p>
+
+        <h3>1.1 Personal Information</h3>
+        <p><em>Collected during account creation or login:</em></p>
+        <ul>
+          <li>Name</li>
+          <li>Email address</li>
+          <li>Phone number (optionally stored)</li>
+          <li>Login method (Email or Google Sign‑In)</li>
+        </ul>
+        <p><em>Used for:</em></p>
+        <ul>
+          <li>Account creation</li>
+          <li>Authentication</li>
+          <li>Identifying customers for orders</li>
+        </ul>
+        <p>We do not sell or share this information with any third party.</p>
+
+        <h3>1.2 Google Sign‑In Data</h3>
+        <p><em>If you log in with Google, we receive:</em></p>
+        <ul>
+          <li>Google name</li>
+          <li>Google email</li>
+          <li>Google account ID</li>
+        </ul>
+        <p><em>Used only for:</em></p>
+        <ul>
+          <li>Authentication</li>
+          <li>Creating your user profile in Firestore</li>
+        </ul>
+
+        <h3>1.3 Location Information</h3>
+        <p><em>Requested through permissions:</em></p>
+        <div class="perm">
+          <span class="badge">ACCESS_FINE_LOCATION</span>
+          <span class="badge">ACCESS_COARSE_LOCATION</span>
+        </div>
+        <p><em>We collect:</em></p>
+        <ul>
+          <li>GPS latitude</li>
+          <li>GPS longitude</li>
+          <li>Country (via reverse geocoding)</li>
+        </ul>
+        <p><em>Used for:</em></p>
+        <ul>
+          <li>Showing nearby restaurants</li>
+          <li>Correct delivery or pickup zones</li>
+          <li>Country‑based content</li>
+        </ul>
+        <p class="note">Location is not shared, not tracked, and not stored permanently.</p>
+
+        <h3>1.4 Device & App Data</h3>
+        <p>We may collect:</p>
+        <ul>
+          <li>Device type</li>
+          <li>OS version</li>
+          <li>Crash logs</li>
+          <li>Performance diagnostics</li>
+        </ul>
+        <p><em>Used only for:</em> improving app stability and debugging.</p>
+
+        <h3>1.5 Uploaded Media</h3>
+        <p>Users and admins may upload:</p>
+        <ul>
+          <li>Food images</li>
+          <li>Restaurant images</li>
+        </ul>
+        <p>Stored securely in Firebase Storage.</p>
+
+        <h3>1.6 Local Storage (GetStorage)</h3>
+        <p>We store small, non‑sensitive data on your device:</p>
+        <ul>
+          <li>Country</li>
+          <li>Cart items</li>
+          <li>Login type (Google or Email)</li>
+        </ul>
+        <p>No sensitive or personal data is stored locally.</p>
+      </section>
+
+      <section id="use" class="section">
+        <h2>2. How We Use Your Data</h2>
+        <ul>
+          <li>Authenticate users</li>
+          <li>Maintain your profile</li>
+          <li>Show posts, food menus, and restaurant details</li>
+          <li>Detect your location and country</li>
+          <li>Process customer orders</li>
+          <li>Store cart items</li>
+          <li>Open navigation in Google Maps</li>
+          <li>Improve app performance</li>
+        </ul>
+        <p>We never sell your data.</p>
+      </section>
+
+      <section id="security" class="section">
+        <h2>3. Data Storage & Security</h2>
+        <p>Your data is stored securely in:</p>
+        <ul>
+          <li>Firebase Authentication</li>
+          <li>Firebase Firestore</li>
+          <li>Firebase Storage</li>
+        </ul>
+        <p>These systems use encrypted transfer and encrypted storage by default. We take reasonable measures to safeguard your information, but no system is 100% secure.</p>
+      </section>
+
+      <section id="sharing" class="section">
+        <h2>4. Data Sharing</h2>
+        <ul>
+          <li><strong>✅ Google Firebase</strong> (as a backend infrastructure provider)</li>
+          <li><strong>❌ No advertising networks</strong></li>
+          <li><strong>❌ No analytics SDKs</strong></li>
+          <li><strong>❌ No third‑party tracking</strong></li>
+        </ul>
+      </section>
+
+      <section id="permissions" class="section">
+        <h2>5. Permissions We Use</h2>
+        <h3>✅ INTERNET</h3>
+        <p>To fetch posts, log in, and sync data.</p>
+
+        <h3>✅ ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</h3>
+        <p>To detect your country and nearby restaurants.</p>
+
+      </section>
+
+      <section id="rights" class="section">
+        <h2>6. Your Rights</h2>
+        <p>You can contact us anytime to:</p>
+        <ul>
+          <li>Request account deletion</li>
+          <li>Update your information</li>
+          <li>Stop using the app</li>
+          <li>Disable location permission</li>
+          <li>Clear stored data</li>
+        </ul>
+        <p>We respond within a reasonable time.</p>
+      </section>
+
+      <section id="children" class="section">
+        <h2>7. Children’s Privacy</h2>
+        <p>Sharlet Prime is not intended for children under age 13. We do not knowingly collect information from children.</p>
+      </section>
+
+      <section id="changes" class="section">
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update this policy when necessary. Updates will appear on the app or website.</p>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>9. Contact Us</h2>
+        <ul>
+          <li><span class="mono">App Name:</span> Sharlet Prime</li>
+          <li><span class="mono">Email:</span> <a id="support-email" href="mailto:sharletprime@gmail.com">sharletprime@gmail.com</a></li>
+        </ul>
+        <p class="note">Replace the email above with your official support address.</p>
+      </section>
+
+      <hr>
+      <footer>
+        <p>© <span id="year"></span> Sharlet Prime. All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Auto-fill dates in the user's local timezone
+    (function(){
+      const d = new Date();
+      const fmt = new Intl.DateTimeFormat(undefined,{year:'numeric',month:'long',day:'numeric'}).format(d);
+      document.getElementById('last-updated').textContent = fmt;
+      document.getElementById('year').textContent = d.getFullYear();
+    })();
+
+    // If this file is loaded with a query like ?email=support@yourdomain.com,
+    // set the contact email dynamically (handy for white-label builds)
+    (function(){
+      const params = new URLSearchParams(location.search);
+      const email = params.get('email');
+      if(email){
+        const link = document.getElementById('support-email');
+        link.textContent = email;
+        link.href = 'mailto:'+email;
+      }
+    })();
+  </script>
+</body>
+</html>
